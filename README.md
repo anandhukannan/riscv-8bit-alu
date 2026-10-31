@@ -71,7 +71,27 @@ Verification is performed using **Icarus Verilog** (`iverilog`) for compilation 
    gtkwave alu_waveform.vcd
    ```
 
----
+###  Sample Output
+```text
+VCD info: dumpfile alu_waveform.vcd opened for output.
+--------------------------------------------------
+       STARTING ALU SELF-CHECKING TESTBENCH
+--------------------------------------------------
+[PASS] ADD: 15 + 10 =  25 (Zero = 0)
+[PASS] SUB & ZERO: 20 - 20 =   0 (Zero = 1)
+[PASS] AND: 0xFF & 0x0F = 0x0f
+[PASS] OR: 0xF0 | 0x0F = 0xff
+[PASS] XOR: 0xAA ^ 0xFF = 0x55
+[PASS] SLT: -5 < 10 holds true -> Result =   1
+--------------------------------------------------
+           TESTBENCH COMPLETE
+--------------------------------------------------
+### Waveform Verification (GTKWave)
+![ALU Waveform Verification](docs/waveform.png)
+
+
+```
+
 
 ## Toolchain & Requirements
 - **Language:** Verilog HDL (IEEE 1364-2001)
