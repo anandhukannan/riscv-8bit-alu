@@ -86,6 +86,7 @@ VCD info: dumpfile alu_waveform.vcd opened for output.
 --------------------------------------------------
            TESTBENCH COMPLETE
 --------------------------------------------------
+'''
 ### Waveform Verification (GTKWave)
 ![ALU Waveform Verification](docs/waveform.png)
 
